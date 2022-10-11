@@ -12,7 +12,7 @@ sub main() {
 
     while( my $line = <INPUT> ){ #<INPUT> reads one line from the file
         #if( $line =~ /(l+)/ ){ #quantifier plus + means match one or more of the preceding (in this case the character l)
-        if( $line =~ /(s.*n)/){ #quantifier star * means match zero or more of the preceding character (in this case o)
+        if( $line =~ /(s.*?n)/){ #quantifier star * means match zero or more of the preceding character (in this case o)
             print "$1\n";
         }
     }
