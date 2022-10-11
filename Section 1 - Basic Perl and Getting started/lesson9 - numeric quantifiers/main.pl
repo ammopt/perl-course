@@ -6,26 +6,19 @@ $|=1;
 sub main() {
 
     # Match cheatsheet
-    # \d digit
-    # \s space
-    # \S non-space
-    # \w alphanumeric (including underscore)
+    # * zero or more of the preceding character, as many as possible (greedy)
+    # + one or more of the preceding character, as many as possible (greedy)
+    # *? zero or more of the preceding character, as few as possible (non-greedy)
+    # +? one of more of the preceding character, as few as possible (non-greedy)
+    # {5} five of the preceding
+    # {3, 6} at least three and at most 6
+    # {3,} at least three
 
-    my $text = 'I am 117 years old tomorrow.';
-    my $text2 = 'Iam117years_oldtomorrow.';
+    my $text = 'DE9865457';
 
-    if($text =~ /(am\s\d+)/){
+    if($text =~ /(DE\d{3,6})/){
         print "First match: $1\n";
     }
-
-    if($text =~ /(y\S*)/){
-        print "Second match: $1\n";
-    }
-
-    if($text2 =~ /(\w*)/){
-        print "Third match: $1\n";
-    }
-
 }
 
 main();
