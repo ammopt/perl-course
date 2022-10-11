@@ -5,6 +5,7 @@
 - string arguments inside single quotes are interpreted as literal strings, while double quotes special characters will get interpreted
 - scalar variable is a variable that just holds one value, whether a string or a number or whatever
 - use =~ to match with a regex
+- regex: use a dot . to match any letter
 
 ## VS Code
 - Install Perl Navigator (auto complete on dependencies) and Perl Toolbox (linting and syntax check)
