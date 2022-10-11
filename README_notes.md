@@ -6,6 +6,7 @@
 - scalar variable is a variable that just holds one value, whether a string or a number or whatever
 
 ## Regex
+- one way to deal with regex "surprises" is to build bit by bit, few characters first and add to it gradually
 - use =~ to match with a regex
 - regex: use a dot . to match any letter
 - quantifiers are one of the fundamental building blocks os regular expressions (wild cards, groups and quantifiers)
