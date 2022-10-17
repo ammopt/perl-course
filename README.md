@@ -17,5 +17,7 @@
  match zero or more of the preceding character (in this case o) (will match son, soon, sn)
 - `if( $line =~ /(s.*?n)/)` quantifier star qustion mark *? match zero or more of the preceding character, but no longer greedy, match as little as possible
 
-## VS Code
-- Install Perl Navigator (auto complete on dependencies) and Perl Toolbox (linting and syntax check)
+## VS Code Extensions
+- Install Perl Navigator (auto complete on dependencies)
+- Perl Toolbox (linting and syntax check)
+- Template Toolkit by Alexey Tabakman
